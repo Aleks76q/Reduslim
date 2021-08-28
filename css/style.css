@@ -1,0 +1,269 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style-type: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+@import url(color.css) screen and (color);
+@font-face {
+	font-family: Montserrat;
+	src: url("../fonts/montserrat/Montserrat-ExtraBold.ttf");
+}
+.body {
+max-width: 1280px;
+}
+.wrapper {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-family: Montserrat;
+}
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+	background: #E5E5E5;
+}
+.form {
+	display: inline-flex;
+	margin: 80px 80px;
+}
+.form__image {
+	position: relative;
+	width: 560px;
+	height: 500px;
+	background: linear-gradient(180deg, #428A60 0%, #35734F 100%);
+	overflow: hidden;
+}
+.form__image-ring {
+	position: absolute;
+	width: 688px;
+	height: 688px;
+	border-radius: 360px;
+	border: 20px solid #428A60; 
+	margin-top: -80px;
+	margin-left: 250px;
+	z-index: 1;
+	opacity: 0.6;
+}
+.form__image-text {
+	width: 89px;
+	margin-left: 40px;
+	margin-top: 40px;
+}
+.form__image-text li,.form__image-text-1 li{
+	display: none;
+}
+.form__image-fon {
+	margin-left: 20px;
+	margin-top: 10px;
+	width: 398px;
+	height: 398px;
+	border-radius: 200px;
+	background: #428A60;
+	position: absolute;
+	z-index: 5;
+}
+.form__image-image img {
+	margin-left: 40px;
+	margin-top: 145px;
+}
+.form__image-text-1{
+	position: absolute;
+	padding-top: 390px;
+	padding-left: 40px;
+}
+.reduslim-black,.eco-black {
+	display: none;
+}
+.form__text {
+	width: 560px;
+	height: 500px;
+	background: #FFFFFF;
+}
+.form__text-step {
+	font-size: 30px;
+	line-height: 39px;
+	font-weight: 800;
+	width: 303px;
+	height: 78px;
+	margin: 29px auto;
+}
+.form__text-block {
+    position: relative;
+	margin-left: 117px;
+	height: 280px;
+}
+.form__text-block-name,.form__text-block-tel {
+	font-size: 12px;
+	font-weight: 800;
+	line-height: 15px;
+	letter-spacing: 5%;
+	width: 100%;
+	display: flex;
+	justify-content: start;
+	height: 26px;
+}
+.colortext {
+	margin-left: 5px;
+	opacity: 0.6;
+}
+.form__text-block-tel {
+	margin-top: 20px;
+}
+.form__text-block-name-1 {
+	width: 320px;
+	height: 50px;
+	background: #F8F8F8;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.form__text-block-name-1 input,.form__text-block-tel-1 input{
+	opacity: 0.2;
+	margin-top: 15px;
+	margin-left: 20px;
+	width: 100%;
+}
+.wrap-form__text-block-tel {
+	display: flex;
+	justify-content: space-between;
+	width: 320px;
+}
+.form__text-block-tel-1 {
+	width: 184px;
+	height: 50px;
+	background: #F8F8F8;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.wrap-form__text-block-language {
+	width: 116px;
+	height: 50px;
+	background: #F8F8F8;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+}
+.form__text-block-language {
+   width: 70px;
+   height: 20px;
+   margin-top: 15px;
+   margin-left: 38px;
+   cursor: pointer;
+}
+.form__text-block-language label {
+	cursor: pointer;
+}
+.form__text-block-language img{
+	margin-top: -4px;
+	width: 26px;
+	height: 18px;
+}
+.form__text-botton {
+	position: absolute;
+	margin-top: 38px;
+	cursor: pointer;
+}
+.form__text-botton-text {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	width: 320px;
+    height: 42px;
+	background-color: #428A60;
+	border-radius: 5px;
+}
+.form__text-botton-text p {
+   color: #ffffff;
+   margin-top: 12px;
+}
+.form__text-botton-vector {
+	color: #ffffff;
+	margin-left: 10px;
+	margin-top: 12px;
+}
+input[type="checkbox"] {
+	display: none;
+}
+label::before {
+	content: '';
+	display: inline-block;
+	width: 15px;
+	height: 10px;
+	margin-right: -75px;
+	background: url(../img/icons/polygon-1.png);
+	background-repeat: no-repeat;
+}
+.form__text-trusted {
+	display: none;
+}
